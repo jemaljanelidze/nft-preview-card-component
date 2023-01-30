@@ -4,6 +4,14 @@
   margin: 0;
 }
 
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --blue-main-BG: hsl(217, 54%, 11%);
+  --blue-card-BG: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+}
+
 body {
   font-family: 'Outfit', sans-serif;
 }
@@ -13,17 +21,20 @@ img {
 }
 
 main {
-  background-color: #0D192C;
+  background-color: var(--blue-main-BG);
+}
+
+.content-parent {
+  height: 667px;
 }
 
 .content {
   width: 327px;
   height: 543px;
-  background: #15263F;
+  background-color: var(--blue-card-BG);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
   padding: 24px 25px 24px 24px;
-  margin: 62px 9px;
 }
 
 .img-section {
@@ -37,21 +48,21 @@ main {
 .heading {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px #2E405A solid;
+  border-bottom: 1px var(--blue-line) solid;
 }
 
-h1 {
+.title {
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.75rem;
   margin-bottom: 0.75rem;
 }
 
-p {
+.description {
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 300;
-  color: #8BACD9;
+  color: var(--Soft-blue);
   margin-bottom: 1rem;
 }
 
@@ -62,12 +73,12 @@ p {
 
 .child:first-child span {
   font-weight: 600;
-  color: #00FFF8;
+  color: var(--Cyan);
   padding-left: 3px;
 }
 
 .child:last-child span {
-  color: #8BACD9;
+  color: var(--Soft-blue);
   padding-left: 6px;
 }
 
@@ -82,7 +93,7 @@ p {
 }
 
 .footer > span {
-  color: #8BACD9;
+  color: var(--Soft-blue);
   padding-left: 1rem;
 }
 
@@ -96,10 +107,4 @@ p {
 
 .attribution a {
   color: #3e52a3;
-}
-
-@media screen and (min-width: 1440px) {
-  .content {
-    margin: 151.5px auto
-  }
 }
