@@ -8,6 +8,10 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 main {
   background-color: #0D192C;
 }
@@ -24,11 +28,9 @@ main {
 
 .img-section {
   width: 278px;
-  height: 278px;
 }
 
-img {
-  max-width: 100%;
+.img-section > img {
   border-radius: 8px;
 }
 
@@ -42,7 +44,6 @@ h1 {
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.75rem;
-  color: white;
   margin-bottom: 0.75rem;
 }
 
@@ -54,22 +55,39 @@ p {
   margin-bottom: 1rem;
 }
 
-.child:first-child span {
-  font-weight: 600;
+.parent, .footer {
   font-size: 15px;
   line-height: 19px;
+}
+
+.child:first-child span {
+  font-weight: 600;
   color: #00FFF8;
   padding-left: 3px;
-  vertical-align: middle;
 }
 
 .child:last-child span {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 19px;
   color: #8BACD9;
   padding-left: 6px;
-  vertical-align: middle;
+}
+
+.image-avatar {
+  width: 33px;
+  margin-top: 1rem;
+}
+
+.image-avatar > img {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.footer > span {
+  color: #8BACD9;
+  padding-left: 1rem;
+}
+
+.footer a {
+  padding-left: 5px;
 }
 
 .attribution {
