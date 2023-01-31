@@ -45,6 +45,21 @@ main {
   border-radius: 8px;
 }
 
+.hidden {
+  top: 0;
+  background-color: hsl(178deg 100% 50% / 50%);
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.hidden:hover {
+  opacity: 1;
+}
+
+.hidden > img {
+  width: 2.75rem;
+}
+
 .heading {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -56,6 +71,10 @@ main {
   font-weight: 600;
   line-height: 1.75rem;
   margin-bottom: 0.75rem;
+}
+
+.title:hover {
+  color: var(--Cyan) !important;
 }
 
 .description {
@@ -101,10 +120,39 @@ main {
   padding-left: 5px;
 }
 
+.footer a:hover {
+  color: var(--Cyan) !important;
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 11px;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 1440px) {
+  .content-parent {
+    height: 900px;
+  }
+  .content {
+    width: 350px;
+    height: 596px;
+    padding: 24px;
+  }
+  .img-section {
+    width: 302px;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+  .description {
+    margin-bottom: 1.5rem;
+  }
+  .parent, .footer {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
